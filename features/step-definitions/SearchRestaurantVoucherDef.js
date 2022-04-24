@@ -8,7 +8,7 @@ const homePage = client.page.homePage();
 const commonPage = client.page.commonPage();
 const foodPage = client.page.foodPage();
 
-const debug = Debug('INTRO-TO-NIGHTWATCHJS:features:steps-definitions:SearchRestaurantVoucherDef');
+const debug = Debug('VOUCHER_CODES:features:steps-definitions:SearchRestaurantVoucherDef');
 
 Given('I visit home page', function () {
     debug('url is  %s', url);
@@ -30,7 +30,7 @@ When('I search voucher for {int} people in {string}',async function (peopleNum, 
 
 Then('I am directed to search result page for {int} people', async function (peopleNum) {
     // needs final confirmation
-    // client.pause(5*1000);  
+    await client.pause(3*1000);  
     const currentURL =  await commonPage.getCurrentUrl(result);
     const arrayCity = currentURL.split("rl=");
 
