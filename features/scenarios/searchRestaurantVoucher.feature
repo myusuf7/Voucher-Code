@@ -1,6 +1,5 @@
 Feature: Search Restaurant Voucher
-  As as user
-  I want to search a vourcher
+  As as user I want to search a vourcher
 @test
   Scenario: Verify user able search voucher for restaurant by sending values for city and people
     Given I visit home page
