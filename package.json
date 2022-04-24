@@ -1,0 +1,24 @@
+{
+  "name": "intro-nightwtach",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node --inspect-brk node_modules/.bin/nightwatch",
+    "test": "nightwatch",
+    "test:cucumber": "cucumber-js --require cucumber.conf.js --require features/step-definitions --format node_modules/cucumber-pretty"
+  },
+  "keywords": [],
+  "author": "Myusuf",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chromedriver": "^100.0.0",
+    "debug": "^4.3.4",
+    "nightwatch": "^1.3.6"
+  },
+  "dependencies": {
+    "cucumber": "^5.1.0",
+    "cucumber-pretty": "^1.5.0",
+    "nightwatch-api": "^3.0.1"
+  }
+}
